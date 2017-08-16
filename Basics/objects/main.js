@@ -1,0 +1,18 @@
+//simple class declaration
+var Point = (function () {
+    function Point() {
+    }
+    Point.prototype.draw = function () {
+        console.log('drawing x = ' + this.x + ', y = ' + this.y);
+    };
+    Point.prototype.getDistance = function () {
+        console.log('getting distance...');
+    };
+    return Point;
+}());
+//let point: Point = new Point();
+var point = new Point();
+point.x = 2;
+point.y = 3;
+point.draw();
+point.getDistance();
